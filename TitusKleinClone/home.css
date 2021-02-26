@@ -1,0 +1,29 @@
+.thumbnails img{
+    width: 100%;
+}
+.glide{
+    padding-top: 14rem;
+}
+.glide h2{
+    margin: 0px 0px 50px 50px;
+}
+.caption h3{
+    margin-top: 30px;
+}
+.glide__slide img{
+    width: 100%;
+    filter: blur(4px);
+    opacity: .7;
+    transition: .4s ease-in;
+}
+.glide__slide--active img{
+    filter: none;
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+@media(max-width: 1024px){
+    .glide{
+        padding-top: 9rem;
+    }
+}

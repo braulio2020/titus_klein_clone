@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Magic - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="navigations.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+         <!--Navigation-->
+         <nav class="navigation">
+             <a href="#" class="logo">WebMagic</a>
+             <input class="menu-btn" type="checkbox" id="toggle">
+             <label class="menu-icon" for="toggle">
+                 <span class="nav-icon"></span>
+             </label>
+             <ul class="menu">
+                 <li><a href="home.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="work.html">Work</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+         </nav>
+         
+         <header id="showcase">
+
+            <div class="showcase-holder" style="background: url('slider1-min.jpeg') no-repeat center center/cover; filter: brightness(50%);"></div>
+            <div class="showcase-content">
+                <h5>Unify</h5>
+                <h1>Design + Innovation.</h1>
+                <p>
+                    See how innovation-driven design can unlock the 
+                    revenue potential of your idea.
+                </p>
+            </div>
+ 
+        </header>
+    
+        <!--Main Content-->
+        <main class="main">
+
+            <section class="container">
+
+                <div class="thumbnails">
+                    <img src="plane-min.jpg" alt="Bulding with a plane flying over it">
+                </div>
+
+                <div class="description">
+                    <h5>Innovation by design</h5>
+                    <h1>Drive revenue</h1>
+                    <p>Discover how marketing and innovation teams leverage design to turn disruptive technologies into real products that generate 
+                        revenue and earn consumer interest.
+                    </p>
+                    <a href="#">See how</a>
+                </div>
+
+            </section>
+
+            <section class="container">
+
+                <div class="description">
+                    <h5>Innovation by design</h5>
+                    <h1>Ensure Success</h1>
+                    <p>Give your team the best chance of success by pairing your innovative products
+                        with beautiful, engaging design.
+                    </p>
+                    <a href="#">Our method</a>
+                </div>
+
+                <div class="thumbnails">
+                    <img src="dopeMac-min.jpg" alt="MacBook">
+                </div>
+            
+            </section>
+
+            <section class="container">
+
+                <div class="thumbnails">
+                    <img src="accessories-min.jpg" alt="Accessories">
+                </div>
+                
+                <div class="description">
+                    <h5>Innovation by design</h5>
+                    <h1>Captivate customer</h1>
+                    <p>Distiguinsh your brands with targeted design and marketing that translates your
+                        vision into compelling products.
+                    </p>
+                    <a href="#">Case studies</a>
+                </div>
+
+            </section>
+
+            <section class="container">
+
+                <div class="description">
+                    <h5>Innovation by design</h5>
+                    <h1>set up a 30 mins meeting</h1>
+                    <p>Set up a call with one of our creative directors to discover how you can leverage
+                        design to enhance the launch of your products.
+                    </p>
+                    <a href="contact.html">let's talk</a>
+                </div>
+
+            </section>
+        </main>
+
+        <div class="images glide">
+            <h2>Recent Innovations</h2>
+            <div class="glide__track" data-glide-el='track'>
+                <div class="glide__slides">
+                    <div class="glide__slide">
+                        <img src="robotArm-min.jpg" alt="Robot Arm">
+                        <div class="caption">
+                            <h3>Robot Arm.</h3>
+                        </div>
+                    </div>
+                    <div class="glide__slide">
+                        <img src="techGirl-min.jpg" alt="Tech Girl">
+                        <div class="caption">
+                            <h3>Technology Girl.</h3>
+                        </div>
+                    </div>
+                    <div class="glide__slide">
+                        <img src="rocket-min.jpg" alt="Rocket">
+                        <div class="caption">
+                            <h3>Rocket.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="details">
+                <span style="letter-spacing: 2px; color: rgb(70, 70, 70);">&copy; 2020 WebMagic</span>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><span class="fab fa-github"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+            </div>
+        </footer>
+
+       
+    </div>
+    
+    <script src="glide.min.js"></script>
+    
+    <script>
+        new Glide('.images', {
+    type: 'carousel',
+    perView: 3.5,
+    focusAt: 'center',
+    gap: 50,
+    breakpoints: {
+        1024 : {
+            perView: 2.2
+        },
+        768: {
+            perView: 1.8
+        },
+        600: {
+            perView: 1.4
+        }
+   }
+}).mount();
+    </script>
+    <script src="https://kit.fontawesome.com/c1193d0c37.js" crossorigin="anonymous"></script>
+</body>
+</html>

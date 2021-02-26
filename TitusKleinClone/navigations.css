@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    width: 100%;
+    height: 100vh;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(68, 68, 68);
+    line-height: 1.7;
+}
+
+h1, h4, h6, h5, h2, h3, a, button{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+h1{
+    font-size: 2.5em;
+    font-weight: 500;
+}
+h6, h2, h5, h4, h3{
+    font-weight: 400;
+}
+a, button{
+    color: white;
+    font-size: 12px;
+}
+p{
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+
+.main{
+    padding: 0 3rem;
+}
+
+.navigation{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    padding-top: 20px;
+}
+.navigation .menu{
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+
+}
+.navigation .menu a{
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    position: relative;
+}
+.navigation .menu a::after{
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color:white;
+    transition: 0.5s;
+}
+.navigation .menu a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.navigation .logo{
+    float: left;
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 30px 40px;
+}
+.navigation .menu{
+    max-height: none;
+    float: right;
+}
+.navigation li{
+    display: inline-block;
+    padding: 28.5px 30px 28.5px 0;
+    vertical-align: middle;
+}
+.navigation .menu-icon .nav-icon{
+    display: none;
+}
+
+ .navigation .menu-btn{
+     display: none;
+ }
+
+ #showcase{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+ }
+ .showcase-holder{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     filter: brightness(25%);
+ }
+ .showcase-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 0 0 5em 7em;
+    margin-top: 4rem;
+ }
+ 
+ .showcase-content h1{
+    font-size: 5em;
+    width: 450px;
+    font-weight: 900;
+ }
+ .showcase-content h1, .showcase-content h5, .showcase-content p{
+     margin: 0;
+ }
+.showcase-content p{
+    width: 450px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14rem 3rem  5rem 3rem;
+}
+footer a{
+    display: inline-block;
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: inherit;
+}
+footer a .fab{
+    font-size: 22px;
+    color: rgb(70, 70, 70);
+}
+footer .details a{
+    padding: 10px 0;
+    position: relative;
+}
+footer .details a::after{
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: black;
+    transition: 0.2s;
+}
+footer .details a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+@media(max-width: 1024px){
+    .navigation .logo{
+        padding: 25px 45px;
+        font-size: 1em;
+    }
+    .navigation .menu-icon{
+        margin: 30px 40px 0 0;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        display: block;
+        padding: 5px;
+    }
+    .navigation .menu-icon .nav-icon{
+        background: white;
+        display: block;
+        height: 1.5px;
+        width: 20px;
+        position: relative;
+        transition: background-color 0.2s ease-out;
+
+    }
+    .navigation .menu-icon .nav-icon::before{
+       content: '';
+       position: absolute;
+       background: white;
+       display: block;
+       height: 100%;
+       width: 100%;
+       top: 6px;
+       transition: all .2s ease-out;
+    }
+    .navigation .menu-icon .nav-icon::after{
+        content: '';
+        position: absolute;
+        background: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: -6px;
+        transition: all .2s ease-out;
+     }
+     .navigation .menu{
+        max-height: 0;
+        float: right;
+        clear: both;
+        transition: max-height .2s ease-in-out;
+    }
+     .navigation .menu-btn:checked ~ .menu{
+         max-height: 200px;
+     }
+     .navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+           background: transparent;
+     }
+     .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+         transform: rotate(-45deg);
+         top: 0;
+
+    }
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .navigation li{
+        display: block;
+        padding: 0 30px;
+        text-align: right;
+    }
+
+    .showcase-content h1{
+        font-size: 4em;
+    }
+
+}
+
+@media(max-width:768px){
+    .navigation .logo{
+        font-size: .9em;
+    }
+
+    .showcase-content h1{
+        font-size: 2em;
+        width: 250px;
+    }
+    .showcase-content h5{
+        font-size: .8em;
+    }
+    .showcase-content p{
+        width: 70%;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 9rem 0 3rem 0;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        margin-top: 40px;
+    }
+    .details a{
+        margin-top: 40px;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    .navigation .logo{
+        padding: 25px 20px;
+    }
+    .navigation .menu-icon{
+        margin: 30px 20px 0 0;
+    }
+    .navigation li{
+        padding: 0 10px;
+    }
+
+    .showcase-content{
+        padding-left: 4em;
+        margin-top: 6rem;
+    }
+    .showcase-content h1{
+        font-size: 1.5em;
+        width: 200px;
+    }
+    .showcase-content h5{
+        font-size: .6em;
+    }
+    .showcase-content p{
+        width: 90%;
+        font-size: .8em;
+    }
+
+    .main{
+        padding: 0 1.5rem;
+     }
+}

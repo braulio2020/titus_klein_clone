@@ -1,0 +1,175 @@
+ 
+.company-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 14rem;
+    text-align: center;
+}
+.company .fab{
+    font-size: 3rem;
+}
+.main-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14rem;
+}
+.main-content p{
+    width: 800px;
+    font-size: 1.4em;
+}
+.main-guide{
+    display: flex;
+    padding-top: 14rem;
+}
+.guide{
+    width: 35%;
+}
+.guide p{
+    margin: 0 40px;
+}
+.glide{
+    padding-top: 14rem;
+}
+.glide__slide img{
+    width: 100%;
+}
+.caption{
+    margin-top: 20px;
+    width: 70%;
+}
+.main-section{
+    padding: 14rem 3rem 0 3rem;
+    text-align: center;
+}
+.main-section a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(53, 52, 52);
+    padding: 20px 35px;
+    margin-top: 50px;
+}
+
+.main-side-content{
+    display: flex;
+    text-align: left;
+}
+.side-content:first-of-type{
+    width: 35%;
+
+}
+
+.side-content:last-of-type{
+    width: 650px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+    column-gap: 100px;
+}
+.content h1{
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+
+.location{
+    display: flex;
+    padding: 14rem 3rem 0 3rem;
+}
+.location-1{
+    width: 35%;
+}
+.location-2{
+    width: 25%;
+}
+.location-2 h1{
+    font-size: 1.6em;
+}
+.location-2 h3{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+ @media(max-width: 1024px){
+     .main-content{
+         padding-top: 9rem;
+     }
+    .main-content p{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .main-guide{
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+    .guide{
+        width: 100%;
+        margin: 15px 0;
+    }
+    .guide p{
+        margin: 0;
+    }
+
+    .main-side-content{
+        flex-direction: column;
+    }
+    .side-content:first-of-type{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .side-content:last-of-type{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .main-section{
+        text-align: left;
+        padding-top: 9rem;
+    }
+    .location{
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+    .location-1{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .location-2{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .company-container, .glide,
+    .main-content{
+        padding-top: 9rem;
+    }
+}
+
+@media(max-width: 768px){
+    .main-content p{
+        font-size: 1em;
+    }
+
+    .caption{
+        width: 100%;
+    }
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+   }
+  
+}
+@media(max-width: 500px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+   }
+   .main-section{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+   .location{
+     padding-left: 1.5rem;
+     padding-right: 1.5rem;
+  }
+  
+}

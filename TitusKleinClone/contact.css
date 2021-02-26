@@ -1,0 +1,60 @@
+.contact-content{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 14rem;
+}
+.contact-content p{
+    width: 800px;
+    font-size: 1.4em;
+}
+.contact-guide{
+    display: flex;
+    padding-top: 14rem;
+}
+.info{
+    flex-basis: 50%;
+}
+.info:first-of-type p{
+    width: 85%;
+}
+.info form p{
+    margin-bottom: 30px;
+}
+input, textarea{
+    width: 100%;
+    padding: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.info form button{
+    display: block;
+    margin-top: -10px;
+    padding: 20px 35px;
+    background-color: rgb(53, 52, 52);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px){
+    .contact-content{
+        padding-top: 9rem;
+    }
+    .contact-content p{
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .contact-guide{
+        flex-direction: column;
+        padding-top: 9rem;
+    }
+    .info{
+        width: 100%;
+    }
+    .info:first-of-type{
+        margin-bottom: 5rem;
+    }
+    .info:first-of-type p{
+        width: 100%;
+    }
+}
