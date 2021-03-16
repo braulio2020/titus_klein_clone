@@ -1,2 +1,2 @@
 # titus_klein_clone
-## I made a Titus Klein clone website with a few modifications.
+A Titus Klein clone website with a few modifications built using only HTML and CSS
